@@ -1,4 +1,3 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,7 +75,8 @@
                 status.textContent = "Authentication successful!";
                 console.log("Credential:", credential);
 
-                // Here, in a real implementation, you would send the credential information to your server for verification.
+                // Redirect to view.html upon successful authentication
+                window.location.href = "view.html"; // Redirect to view.html
 
             } catch (error) {
                 // Handle errors (e.g., if WebAuthn is not supported, or user cancels the biometric prompt)
